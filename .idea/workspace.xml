@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7f7826d5-b7b9-4cdc-880f-09962bd407f6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/distributed-task-orchestrator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmarks/locustfile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/dependencies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/dynamodb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/workers/consumer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/workers/processor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terraform/api_gateway.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terraform/dynamodb.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terraform/lambda.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terraform/main.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terraform/sqs.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terraform/variables.tf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_ingestion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_workers.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="7" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0" />
+      <entry key="M2" value="1.0" />
+      <entry key="M5" value="1.0" />
+      <entry key="M10" value="1.0" />
+      <entry key="M15" value="1.0" />
+      <entry key="M30" value="1.0" />
+      <entry key="H1" value="1.0" />
+      <entry key="H2" value="1.0" />
+      <entry key="H4" value="1.0" />
+      <entry key="D1" value="1.0" />
+      <entry key="W1" value="1.0" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.757858283255199" />
+      <entry key="MS500" value="0.9460576467255959" />
+      <entry key="S2" value="0.9862327044933592" />
+      <entry key="S5" value="0.9944701686732144" />
+      <entry key="S10" value="0.9972312513520695" />
+      <entry key="S30" value="0.9990762306970642" />
+      <entry key="S60" value="0.9995380086305193" />
+      <entry key="M2" value="0.9997689776295918" />
+      <entry key="M5" value="0.9999075846464872" />
+      <entry key="M10" value="0.9999537912556196" />
+      <entry key="M15" value="0.9999691939331584" />
+      <entry key="M30" value="0.9999845968479506" />
+      <entry key="H1" value="0.9999922983943179" />
+      <entry key="H2" value="0.9999961491897447" />
+      <entry key="H4" value="0.9999980745930187" />
+      <entry key="D1" value="0.999999679098579" />
+      <entry key="W1" value="0.9999999541569335" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3KqSztMOBFOv4d2ltY7jfdk8Ydt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3f44a09f519e-JavaScript-PY-263.7031.30" />
+        <option value="bundled-python-sdk-4787aea48cc6-7eeea20e3101-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-263.7031.30" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f7826d5-b7b9-4cdc-880f-09962bd407f6" name="Changes" comment="" />
+      <created>1792283870985</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1792283870985</updated>
+      <workItem from="1792283872053" duration="1174000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
