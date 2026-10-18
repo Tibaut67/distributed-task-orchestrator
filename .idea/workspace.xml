@@ -4,32 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f7826d5-b7b9-4cdc-880f-09962bd407f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/distributed-task-orchestrator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/benchmarks/locustfile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/dependencies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/dynamodb.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/workers/consumer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/workers/processor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/terraform/api_gateway.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/terraform/dynamodb.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/terraform/lambda.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/terraform/main.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/terraform/sqs.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/terraform/variables.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_ingestion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_workers.py" afterDir="false" />
+    <list default="true" id="7f7826d5-b7b9-4cdc-880f-09962bd407f6" name="Changes" comment="Set up files and configurations for the project.">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,23 +32,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0" />
-      <entry key="M5" value="1.0" />
-      <entry key="M10" value="1.0" />
-      <entry key="M15" value="1.0" />
-      <entry key="M30" value="1.0" />
-      <entry key="H1" value="1.0" />
-      <entry key="H2" value="1.0" />
-      <entry key="H4" value="1.0" />
-      <entry key="D1" value="1.0" />
-      <entry key="W1" value="1.0" />
+      <entry key="MS100" value="1.0000000000783764" />
+      <entry key="MS500" value="1.0166351643667635" />
+      <entry key="S2" value="1.9194828140359999" />
+      <entry key="S5" value="3.198254917130489" />
+      <entry key="S10" value="3.959876872815073" />
+      <entry key="S30" value="4.616473152417688" />
+      <entry key="S60" value="4.803295767996361" />
+      <entry key="M2" value="4.9096889667407515" />
+      <entry key="M5" value="5.114271950144718" />
+      <entry key="M10" value="5.372868390529896" />
+      <entry key="M15" value="5.523102326919671" />
+      <entry key="M30" value="5.725765248737292" />
+      <entry key="H1" value="5.852492690849429" />
+      <entry key="H2" value="5.923442913710222" />
+      <entry key="H4" value="5.960993068445429" />
+      <entry key="D1" value="5.993395254778522" />
+      <entry key="W1" value="5.999053895838971" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -94,23 +70,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.757858283255199" />
-      <entry key="MS500" value="0.9460576467255959" />
-      <entry key="S2" value="0.9862327044933592" />
-      <entry key="S5" value="0.9944701686732144" />
-      <entry key="S10" value="0.9972312513520695" />
-      <entry key="S30" value="0.9990762306970642" />
-      <entry key="S60" value="0.9995380086305193" />
-      <entry key="M2" value="0.9997689776295918" />
-      <entry key="M5" value="0.9999075846464872" />
-      <entry key="M10" value="0.9999537912556196" />
-      <entry key="M15" value="0.9999691939331584" />
-      <entry key="M30" value="0.9999845968479506" />
-      <entry key="H1" value="0.9999922983943179" />
-      <entry key="H2" value="0.9999961491897447" />
-      <entry key="H4" value="0.9999980745930187" />
-      <entry key="D1" value="0.999999679098579" />
-      <entry key="W1" value="0.9999999541569335" />
+      <entry key="MS100" value="0.9794202976582717" />
+      <entry key="MS500" value="1.0122467217956814" />
+      <entry key="S2" value="1.9157897838479245" />
+      <entry key="S5" value="3.195452397202432" />
+      <entry key="S10" value="3.9580962699430056" />
+      <entry key="S30" value="4.615772555748868" />
+      <entry key="S60" value="4.80293034008872" />
+      <entry key="M2" value="4.909500194330038" />
+      <entry key="M5" value="5.114182075528618" />
+      <entry key="M10" value="5.372812268602493" />
+      <entry key="M15" value="5.523060454689874" />
+      <entry key="M30" value="5.725741276362704" />
+      <entry key="H1" value="5.85247975002716" />
+      <entry key="H2" value="5.923436175428361" />
+      <entry key="H4" value="5.960989628341766" />
+      <entry key="D1" value="5.99339467121567" />
+      <entry key="W1" value="5.999053812217987" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -160,11 +136,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1792283870985</updated>
-      <workItem from="1792283872053" duration="1174000" />
+      <workItem from="1792283872053" duration="1502000" />
     </task>
+    <task id="LOCAL-00001" summary="Set up files and configurations for the project.">
+      <option name="closed" value="true" />
+      <created>1792285312459</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1792285312461</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Set up files and configurations for the project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Set up files and configurations for the project." />
   </component>
 </project>
