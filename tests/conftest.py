@@ -24,3 +24,11 @@ def task_repository():
             BillingMode="PAY_PER_REQUEST")
         repo = TaskStateRepository("TaskStateTable")
         yield repo
+
+
+@pytest.fixture
+def sqs_queue():
+    with mock_aws():
+        client = boto3.client("sqs", region_name="us-east-1")
+        res = client.create_queue(QueueName="task-processing-queue")
+        yield {"url": res["QueueUrl"], "client": client}
