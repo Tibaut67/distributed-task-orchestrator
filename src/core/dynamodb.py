@@ -37,3 +37,15 @@ class TaskStateRepository:
     def get_task(self, task_id: str) -> dict | None:
         response = self.table.get_item(Key={"task_id": task_id})
         return response.get("Item")
+
+    def update_task_status(self, task_id: str, status: str) -> bool:
+        try:
+            self.table.update_item(
+                Key={"task_id": task_id},
+                UpdateExpression="SET #s = :status",
+                ExpressionAttributeNames={"#s": "status"},
+                ExpressionAttributeValues={":status": status},
+            )
+            return True
+        except ClientError as e:
+            raise e
