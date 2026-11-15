@@ -9,7 +9,7 @@ from src.core.exceptions import TaskExecutionError
 
 # Polls SQS for up to 10 messages, transitions DynamoDB state, and handles permanent vs transient errors
 def process_tasks(repo: TaskStateRepository, sqs, queue_url: str,wait_time: int = 0 ) -> int:
-    response = sqs.receive_message(QueueUrl=queue_url, MaxNumberOfMessages=10)
+    response = sqs.receive_message(QueueUrl=queue_url, MaxNumberOfMessages=10,WaitTimeSeconds=wait_time)
     messages = response.get("Messages", [])
     count = 0
     for msg in messages: #loops through messages
