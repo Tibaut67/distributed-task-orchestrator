@@ -1,5 +1,6 @@
 import json
-from src.workers.processor import process_tasks
+from src.workers.processor import process_tasks, WorkerDaemon
+
 
 # Verifies worker processes a valid task, marks it COMPLETED in DynamoDB, and deletes it from SQS
 def test_process_tasks_success(task_repository, sqs_queue):
@@ -47,3 +48,20 @@ def test_process_tasks_corrupted_json(task_repository, sqs_queue):
 
     assert processed == 1
     assert "Messages" not in sqs_queue["client"].receive_message(QueueUrl=sqs_queue["url"])
+
+# Verifies WorkerDaemon processes a task and exits cleanly when a shutdown signal is triggered
+def test_worker_daemon_graceful_shutdown(task_repository, sqs_queue):
+    task_id = "task-daemon-1"
+    payload = {"action": "compile"}
+    task_repository.create_task(task_id, payload)
+    sqs_queue["client"].send_message(
+        QueueUrl=sqs_queue["url"],
+        MessageBody=json.dumps({"task_id": task_id, "payload": payload})
+    )
+
+    daemon = WorkerDaemon(task_repository, sqs_queue["client"], sqs_queue["url"], wait_time=0)
+    daemon.stop(None, None)
+    process_tasks(daemon.repo, daemon.sqs, daemon.queue_url, daemon.wait_time)
+
+    assert daemon.running is False
+    assert task_repository.get_task(task_id)["status"] == "COMPLETED"
