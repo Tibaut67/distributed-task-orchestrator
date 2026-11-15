@@ -1,6 +1,7 @@
 import json
 from src.workers.processor import process_tasks
 
+# Verifies worker processes a valid task, marks it COMPLETED in DynamoDB, and deletes it from SQS
 def test_process_tasks_success(task_repository, sqs_queue):
     #Arrange: seed DB and queue
     task_id = "task-1"
@@ -19,7 +20,7 @@ def test_process_tasks_success(task_repository, sqs_queue):
     assert task_repository.get_task(task_id)["status"] == "COMPLETED"
     assert "Messages" not in sqs_queue["client"].receive_message(QueueUrl=sqs_queue["url"])
 
-
+# Verifies worker catches business logic errors, marks the task FAILED in DynamoDB, and deletes it from SQS
 def test_process_tasks_failure(task_repository, sqs_queue):
     task_id = "task-1"
     payload = {"force_fail": True}
@@ -35,7 +36,7 @@ def test_process_tasks_failure(task_repository, sqs_queue):
     assert task_repository.get_task(task_id)["status"] == "FAILED"
     assert "Messages" not in sqs_queue["client"].receive_message(QueueUrl=sqs_queue["url"])
 
-
+# Verifies worker catches malformed JSON poison pills and deletes them from SQS without crashing
 def test_process_tasks_corrupted_json(task_repository, sqs_queue):
     sqs_queue["client"].send_message(
         QueueUrl=sqs_queue["url"],

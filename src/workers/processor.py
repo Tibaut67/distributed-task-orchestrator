@@ -3,6 +3,7 @@ from botocore.exceptions import ClientError
 from src.core.dynamodb import TaskStateRepository
 from src.core.exceptions import TaskExecutionError
 
+# Polls SQS for up to 10 messages, transitions DynamoDB state, and handles permanent vs transient errors
 def process_tasks(repo: TaskStateRepository, sqs, queue_url: str) -> int:
     response = sqs.receive_message(QueueUrl=queue_url, MaxNumberOfMessages=10)
     messages = response.get("Messages", [])
